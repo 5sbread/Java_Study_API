@@ -31,9 +31,10 @@ public class StringStudy2 {
 				
 				String result = "이미지 파일이 아닙니다.";
 				for(int e=0; e<files.length; e++) {
-					if(imgName.equals(files[e]));
+					if(imgName.equals(files[e])) {
 					result = "이미지 파일입니다.";
 					break; //확장자 중 하나면 바로 구문 종료
+					}
 				}
 				System.out.println(result);
 				

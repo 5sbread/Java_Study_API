@@ -34,7 +34,7 @@ public class StringMain1 {
 //----------------------------------------		
 		StringStudy2 s2 = new StringStudy2();
 		//s2.studyIndexOfEx1();
-		//s2.studySubString();
+		//s2.studySubString(); 다음 메소드 실행하려고 주석처리해둠
 		s2.ex2();
 		
 	}
