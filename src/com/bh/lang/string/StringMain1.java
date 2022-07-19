@@ -37,6 +37,9 @@ public class StringMain1 {
 		//s2.studySubString(); 다음 메소드 실행하려고 주석처리해둠
 		s2.ex2();
 		
+//----------------------------------------
+		StringStudy3 s3 = new StringStudy3();
+		s3.studySplit3();
 	}
 
 }
