@@ -55,7 +55,7 @@ public class WeatherController {
 				boolean result = ws.remove(ar);
 				String message = "삭제 실패했습니다.";
 				if(result) {
-					message = "삭제 성공했습니다."
+					message = "삭제 성공했습니다.";
 				}
 				wv.view(message);
 				

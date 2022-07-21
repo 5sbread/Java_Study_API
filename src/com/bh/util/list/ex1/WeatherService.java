@@ -80,7 +80,7 @@ public class WeatherService {
 	}
 
 //---------------------------------------------------
-	public void remove(ArrayList<CityDTO> ar) {
+	public boolean remove(ArrayList<CityDTO> ar) {
 		System.out.println("삭제하려는 도시명을 입력하세요.");
 		System.out.println(ar);
 		System.out.println();
@@ -99,6 +99,7 @@ public class WeatherService {
 				break;
 			}//if
 		}//for
+		return r;
 		
 		
 		//향상된 for
