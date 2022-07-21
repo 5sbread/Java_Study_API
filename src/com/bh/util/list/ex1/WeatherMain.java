@@ -15,6 +15,7 @@ public class WeatherMain {
 		
 		WeatherView wv = new WeatherView();
 		WeatherService ws = new WeatherService();
+		WeatherController wc = new WeatherController();
 		
 		
 //		wv.view("test");
@@ -46,7 +47,6 @@ public class WeatherMain {
 		ws.add(ar);
 		wv.view(ar);
 		
-		WeatherController wc = new WeatherController();
 		wc.start();
 		
 		
