@@ -21,17 +21,20 @@ public class IOMain1 {
 		BufferedReader br = new BufferedReader(ir);
 		//보조스트림 | 문자열로 만들기
 		
+		System.out.println("키보드에서 입력 후 엔터");
 		//String msg = br.readLine();
 		//이렇게 쓰면 오류나서 해결 한게 아래
+		
+		String msg = "";
 		try {
-			System.out.println("키보드에서 입력 후 엔터");
-			String msg = br.readLine();
+			msg = br.readLine();
 			System.out.println(msg);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		//buffer를 읽어오기
+		System.out.println(msg);
 		
 		
 	}
