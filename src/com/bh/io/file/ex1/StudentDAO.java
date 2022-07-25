@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
@@ -56,8 +57,28 @@ public class StudentDAO {
 		//1을 리턴 : 정상적인 성공
 		//0을 리턴 : 예외가 발생한 경우
 	public int setList(ArrayList<StudentDTO> ar) {
-
 		
+		File file = new File("D:\\ssb\\study", "studnetData.txt");
+		FileWriter fw = null;
+		
+		try {
+			fw = new FileWriter(file);
+			fw.write("\r \n");
+			for(StudentDTO studentDTO:ar) {
+				StringBuffer stringBuffer = new StringBuffer();
+				stringBuffer.append(studentDTO.getName());
+				stringBuffer.append(",");
+				stringBuffer.append(studentDTO.getNum());
+				stringBuffer.append(",");
+				stringBuffer.append(studentDTO.getKor());
+				stringBuffer.append(",");
+				stringBuffer.append(studentDTO.getEng());
+				stringBuffer.append(",");
+				stringBuffer.append(studentDTO.getMath());
+				stringBuffer.append(",");
+			}
+			
+		}
 		
 		
 		
