@@ -11,12 +11,11 @@ public class ThreadMain {
 		//t2.getAlpa();
 		
 		Thread t = new Thread();
+		
 		//개발자가 직접 호출이 아니라
 		//OS에 실행 부탁
-		
 		t1.start();
 		t.start();
-		//ㄴ 
 		
 
 	}

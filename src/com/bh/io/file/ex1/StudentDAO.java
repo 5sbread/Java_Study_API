@@ -58,6 +58,7 @@ public class StudentDAO {
 		//0을 리턴 : 예외가 발생한 경우
 	public int setList(ArrayList<StudentDTO> ar) {
 		
+		int result = 1;
 		File file = new File("D:\\ssb\\study", "studnetData.txt");
 		FileWriter fw = null;
 		
@@ -77,10 +78,13 @@ public class StudentDAO {
 				stringBuffer.append(studentDTO.getMath());
 				stringBuffer.append(",");
 			}
-			
+			fw.flush();
+		}catch(IOException e) {
+			e.printStackTrace();
+			result = 0;
 		}
 		
-		
+		return result;
 		
 		
 	}
